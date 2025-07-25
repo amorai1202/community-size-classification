@@ -20,15 +20,15 @@ It can be used with:
 
 ### 🧮 Classification Method
 
+
 <table>
   <tr>
     <td>
-      <p>For each grid cell, we compute a <strong>local population density</strong>:</p>
+     <p> For each grid cell, we compute the <strong>local population density</strong>:<p>
 
-      $$
-      \text{Local population density} = \frac{Population_{cell} + Population_{neighbors}}{Area_{cell} + Area_{neighbors}}
-      $$
-
+$$
+\text{Local density} = \frac{Population_{cell} + Population_{neighbors}}{Area_{cell} + Area_{neighbors}}
+$$
       <p>Where:</p>
       <ul>
         <li><code>Population<sub>cell</sub></code> is the population in the grid cell</li>
@@ -62,7 +62,7 @@ In some cases, we manually reclassify specific grid cells to better reflect know
 
 ### 📊 Example Output
 
-Here's a visual preview of what the classification looks like when applied to a 10km × 10km gridded population dataset in Canada:
+Visual preview of the classification applied to a Canadian 10km × 10km gridded population dataset:
 
 | ![Lower Mainland](figures/lower_mainland.png) | ![toronto](figures/toronto.png) |
 |----------------------------------------------|--------------------------------------------|
